@@ -42,6 +42,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
@@ -52,7 +55,7 @@ jobs:
         run: cp CNAME dist/CNAME
 
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5 
+        uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
