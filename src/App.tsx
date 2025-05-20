@@ -4,7 +4,7 @@ import Footer from './components/Footer'
 import TermsOfService from './pages/TermsOfService'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Impressum from './pages/Impressum'
-import IdeaSection from './components/ideaSection'
+import IdeaSection from './components/IdeaSection'
 import SupportSection from './components/SupportSection'
 import ScrollToTop from './components/ScrollToTop'
 
