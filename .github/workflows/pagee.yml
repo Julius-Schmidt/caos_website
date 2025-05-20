@@ -49,7 +49,7 @@ jobs:
           path: dist
 
       - name: Copy CNAME
-        run: cp public/CNAME dist/CNAME
+        run: cp CNAME dist/CNAME
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5 
