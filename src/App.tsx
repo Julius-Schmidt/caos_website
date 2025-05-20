@@ -6,9 +6,12 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import Impressum from './pages/Impressum'
 import IdeaSection from './components/ideaSection'
 import SupportSection from './components/SupportSection'
+import ScrollToTop from './components/ScrollToTop'
+
 export default function App() {
   return (
     <div>
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"

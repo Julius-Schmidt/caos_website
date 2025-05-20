@@ -1,9 +1,10 @@
 import Logo from '../assets/caos_logo.svg'
+import { HashLink } from 'react-router-hash-link'
 
 const links = [
-  { href: '/#download', label: 'Download' },
-  { href: '/#idea',     label: 'Idea'     },
-  { href: '/#support',  label: 'Support'  },
+   { to: '/', label: 'Download' },
+   { to: '/#idea',     label: 'Idea'     },
+   { to: '/#support',  label: 'Support'  },
 ]
 
 export default function Navbar() {
@@ -21,13 +22,14 @@ export default function Navbar() {
         <nav className="absolute inset-0 flex items-center justify-center">
           <ul className="flex space-x-24 text-[28px] font-medium">
             {links.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="hover:opacity-75 transition-opacity"
-                >
-                  {link.label}
-                </a>
+              <li key={link.to}>
+                 <HashLink
+                   to={link.to}
+                   smooth
+                   className="hover:opacity-75 transition-opacity"
+                 >
+                   {link.label}
+                 </HashLink>
               </li>
             ))}
           </ul>
