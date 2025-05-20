@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+env:
+  ACTIONS_STEP_DEBUG: true
+  ACTIONS_RUNNER_DEBUG: true
 
 permissions:
   contents: read      # for checkout
