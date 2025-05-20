@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
 env:
   ACTIONS_STEP_DEBUG: true
   ACTIONS_RUNNER_DEBUG: true
@@ -54,7 +55,7 @@ jobs:
         uses: actions/configure-pages@v5 
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3  
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
